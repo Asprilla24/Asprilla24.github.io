@@ -447,7 +447,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 #fh5co-counter {
-  height: 600px;
+  height: 900px;
 }
 @media screen and (max-width: 768px) {
   #fh5co-counter {
@@ -690,10 +690,10 @@ h1, h2, h3, h4, h5, h6, figure {
   -moz-border-radius: 7px;
   -ms-border-radius: 7px;
   border-radius: 7px;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.1);
 }
 #fh5co-gallery-list li a:hover:before {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.4);
 }
 #fh5co-gallery-list li a .case-studies-summary {
   width: auto;
@@ -716,12 +716,12 @@ h1, h2, h3, h4, h5, h6, figure {
   font-size: 13px;
   color: rgba(255, 255, 255, 0.7);
 }
-#fh5co-gallery-list li a .case-studies-summary h2 {
+#fh5co-gallery-list li a .case-studies-summary h3 {
   color: #fff;
   margin-bottom: 0;
 }
 @media screen and (max-width: 768px) {
-  #fh5co-gallery-list li a .case-studies-summary h2 {
+  #fh5co-gallery-list li a .case-studies-summary h3 {
     font-size: 20px;
   }
 }
@@ -998,6 +998,7 @@ form label {
 #fh5co-couple-story,
 #fh5co-couple,
 #fh5co-gallery,
+#fh5co-counter,
 .fh5co-section {
   padding: 7em 0;
   clear: both;
