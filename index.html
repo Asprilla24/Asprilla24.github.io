@@ -59,6 +59,8 @@
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
@@ -556,6 +558,24 @@
 		</div>
 	</div>
 
+	<div id="fh5co-testimonial">
+		<div class="container">
+			<div class="row">
+				<div class="row animate-box">
+					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+						<span>Maps</span>
+						<h2>Wedding Location</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 animate-box">
+						<div id="map"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<footer id="fh5co-footer" role="contentinfo">
 		<div class="container">
 
@@ -607,8 +627,11 @@
 	<script src="js/simplyCountdown.js"></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
-
+	<!-- prettier-ignore -->
+    <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+        ({key: "AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg", v: "beta"});</script>
 	<script>
+		
     var d = new Date(new Date().getTime() + 200 * 120 * 120 * 2000);
 
     // default example
@@ -626,7 +649,35 @@
         enableUtc: false
     });
 </script>
+<!-- MAPS -->
+<script>
+	let map;
 
+	async function initMap() {
+	// The location of Lawu Street
+	const position = { lat: -8.1301875, lng: 112.5630973 };
+	// Request needed libraries.
+	//@ts-ignore
+	const { Map } = await google.maps.importLibrary("maps");
+	const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+
+	// The map, centered at Uluru
+	map = new Map(document.getElementById("map"), {
+		zoom: 12,
+		center: position,
+		mapId: "DEMO_MAP_ID",
+	});
+
+	// The marker, positioned at Lawu Street
+	const marker = new AdvancedMarkerElement({
+		map: map,
+		position: position,
+		title: "Indonesia",
+	});
+	}
+
+	initMap();
+</script>
 	</body>
 </html>
 
