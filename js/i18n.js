@@ -21,8 +21,8 @@ var dictionary = {
     en: "Are You Attending?",
   },
   'Are You Attending? Desc': {
-    id: "Please Fill-up the form to notify you that you're attending. Thanks.",
-    en: "Please Fill-up the form to notify you that you're attending. Thanks.",
+    id: "Please Fill-up the form to notify us that you're attending. Thanks.",
+    en: "Harap isi formulir untuk memberi tahu, bahwa Anda akan hadir. Terima kasih :)",
   },
   'Best Wishes': {
     id: "Best Wishes",
