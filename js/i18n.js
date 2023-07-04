@@ -18,19 +18,19 @@ var dictionary = {
   },
   submitAttending: {
     id: "Saya Hadir",
-    en: "I'm Attending",
+    en: "I'll be there :)",
   },
   submitNotAttending: {
     id: "Tidak Hadir",
-    en: "Not Attending",
+    en: "I'll missed the party :(",
   },
   'Are You Attending?': {
     id: "Apakah Kamu Hadir?",
     en: "Are You Attending?",
   },
   'Are You Attending? Desc': {
-    id: "Please Fill-up the form to notify us that you're attending. Thanks.",
-    en: "Harap isi formulir untuk memberi tahu, bahwa Anda akan hadir. Terima kasih :)",
+    id: "Harap isi formulir untuk memberi tahu, bahwa Anda akan hadir. Terima kasih :)",
+    en: "Please Fill-up the form to notify us that you're attending. Thanks.",
   },
   'Best Wishes': {
     id: "Best Wishes",
