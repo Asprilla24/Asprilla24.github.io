@@ -1,5 +1,13 @@
 
 var dictionary = {
+  'Wedding Invitation': {
+    id: "Undangan Pernikahan",
+    en: "Wedding Invitation",
+  },
+  'Save the date': {
+    id: "Simpan Tanggal",
+    en: "Save the date",
+  },
   thankyou: {
     id: "Terima Kasih",
     en: "Thank you",
@@ -77,7 +85,7 @@ var dictionary = {
     en: "Our Story",
   },
   gettingStarted: {
-    id: "We Are Getting Married",
+    id: "Kami akan menikah",
     en: "We Are Getting Married",
   },
   'we-invited': {
