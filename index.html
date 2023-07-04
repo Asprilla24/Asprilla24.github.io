@@ -147,7 +147,7 @@
 					</div>
 					<div class="desc-bride">
 						<h3>Jihan Arifia Ramadhanti</h3>
-						<p data-translate="bride-desc">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove</p>
+						<p data-translate="bride-desc">a family-oriented girl looking for a life partner who values relationships and has a strong sense of responsibility towards his family. has a personality that revolves around her goals and improving her situation.eager to try new experiences and live life to the fullest!</p>
 					</div>
 				</div>
 			</div>
@@ -448,6 +448,14 @@
 										</blockquote>
 									</div>
 								</div>
+								<div class="item">
+									<div class="testimony-slide active text-center">
+										<span>Angga Agustian</span>
+										<blockquote>
+											<p>"Selamat menikah kawan, waktu terasa begitu cepat berlalu, semoga kelak kita bisa duduk bersama sambil menikmati segelas kopi dan bercerita tentang anak anak kita."</p>
+										</blockquote>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -467,20 +475,17 @@
 			</div>
 			<div class="row animate-box">
 				<div class="col-md-10 col-md-offset-1">
-					<form class="form-inline" 
-						method="POST" 
-						action="https://script.google.com/macros/s/AKfycbyDxeCVXKHfxt_rYn3_0VZtPAtaxbBaZKj5qrKQW4IIAVY9iHMjR9KD5B-iiGduvWQh/exec"
-					>
+					<form class="form-inline" id="form">
 						<div class="col-md-4 col-sm-4">
 							<div class="form-group">
 								<label for="name" class="sr-only">Name</label>
-								<input type="text" name="name" class="form-control" id="name" placeholder="Name" required>
+								<input type="text" name="Name" class="form-control" id="Name" placeholder="Name" required>
 							</div>
 						</div>
 						<div class="col-md-4 col-sm-4">
 							<div class="form-group">
 								<label for="wishes" class="sr-only">Wishes</label>
-								<input type="text" name="wishes" class="form-control" id="wishes" placeholder="Wishes" required>
+								<input type="text" name="Wishes" class="form-control" id="Wishes" placeholder="Wishes" required>
 							</div>
 						</div>
 						<div class="col-md-4 col-sm-4" style="
@@ -491,16 +496,15 @@
 								padding-left: 0px;
 								padding-right: 5px;
 							">
-								<button data-translate="submitAttending" type="submit" class="btn btn-default btn-block">I'm Attending</button>
+								<button data-translate="submitAttending" type="submit" class="btn btn-default btn-block" id="submit_attd">I'm Attending</button>
 							</div>
-							<!-- <div class="col-md-6 col-sm-6" style="
+							<div class="col-md-6 col-sm-6" style="
 								padding-left: 0px;
 								padding-right: 0px;
 							">
-								<button data-translate="submitNotAttending" type="submit" class="btn btn-default btn-block">Not Attending</button>
-							</div> -->
+								<button data-translate="submitNotAttending" type="submit" class="btn btn-default btn-block" id="submit_nattd">Not Attending</button>
+							</div>
 						</div>
-						
 					</form>
 				</div>
 			</div>
@@ -553,7 +557,6 @@
     <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
         ({key: "AIzaSyDuQ6msXmxjrx8zfugg6RUY6iS6lD67UJc", v: "beta"});</script>
 	<script>
-		const urlParams = new URLSearchParams(window.location.search);
 		const nameParam = urlParams.get('n');
 		const invitation_name = decode64(nameParam)
 		$('#invitation_name').html(invitation_name)
@@ -656,6 +659,42 @@
 
 			return unescape(output);
   	}
+</script>
+<script>
+	const form = document.querySelector("#form")
+	const submitButton = document.querySelector("#submit_attd")
+	const submitNButton = document.querySelector("#submit_nattd")
+	const scriptURL = 'https://script.google.com/macros/s/AKfycbyxhtP3MjnQdoe7Hiy08oL3Cs5-4cF88Z-d7z-vCZ6a8uIOZumNOUqDzwBEJtcx0AYR/exec'
+
+	submitButton.addEventListener('click', e => {
+		submitButton.disabled = true
+		submitNButton.disabled = true
+		let requestBody = new FormData(form)
+		requestBody.append("Attending", "Yes")
+		submitForm(requestBody)
+	})
+
+	submitNButton.addEventListener('click', e => {
+		submitButton.disabled = true
+		submitNButton.disabled = true
+		let requestBody = new FormData(form)
+		requestBody.append("Not Attending", "Yes")
+		submitForm(requestBody)
+	})
+   
+	function submitForm(requestBody) {
+		fetch(scriptURL, { method: 'POST', body: requestBody})
+			.then(response => {
+				alert('Success!', response)
+				submitButton.disabled = false
+				submitNButton.disabled = false
+			})
+			.catch(error => {
+				alert('Error!', error.message)
+				submitButton.disabled = false
+				submitNButton.disabled = false
+			})
+	 }
 </script>
 <!-- MAPS -->
 <script>

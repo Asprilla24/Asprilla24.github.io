@@ -6,7 +6,7 @@ var dictionary = {
   },
   "thankyou-desc": {
     id: "Merupakan suatu kehormatan dan kebanggaan bagi kami, apabila Bapak/Ibu/Saudara/i, berkenan hadir dan memberikan doa restu kepada kami.",
-    en: "Merupakan suatu kehormatan dan kebanggaan bagi kami, apabila Bapak/Ibu/Saudara/i, berkenan hadir dan memberikan doa restu kepada kami.",
+    en: "It is an honor for us, if you are willing to attend and give us your blessing",
   },
   submitAttending: {
     id: "Saya Hadir",
@@ -37,15 +37,15 @@ var dictionary = {
     en: "Open Google Maps Here!",
   },
   maps: {
-    id: "Maps",
-    en: "Peta",
+    id: "Peta",
+    en: "Maps",
   },
   weddinglocation: {
-    id: "Wedding Location",
-    en: "Lokasi Pernikahan",
+    id: "Lokasi Pernikahan",
+    en: "Wedding Location",
   },
   memoriesDesc: {
-    id: "Cool pictures with peaky blinders and onepiece references, because we love it.",
+    id: "Foto-foto keren dengan referensi peaky blinders dan onepiece, karena kami menyukainya.",
     en: "Cool pictures with peaky blinders and onepiece references, because we love it.",
   },
   'arrum-arti': {
@@ -53,27 +53,27 @@ var dictionary = {
     en: "21. And one of His signs is that He created for you spouses from among yourselves so that you may find comfort in them. And He has placed between you compassion and mercy. Surely in this are signs for people who reflect.",
   },
   'qs-arrum': {
-    id: "QS. Ar-Rum Ayat 21",
-    en: "Surah Ar-Rum Ayat 21",
+    id: "Surah Ar-Rum Ayat 21",
+    en: "QS. Ar-Rum Ayat 21",
   },
   'relationship-desc': {
-    id: "On the bustling streets of Malioboro, Jogja, time flies by as we share stories, laughs and vulnerabilities, feeling the undeniable chemistry between us. With each passing moment, we realized that this first encounter was extraordinary. It was the start of a deep and meaningful relationship filled with love, growth, and a shared journey towards an extraordinary future.",
+    id: "Di jalanan Malioboro, Jogja yang ramai. Waktu berlalu dengan cepat saat kami berbagi cerita, tawa, dan kegundahan, merasakan kemistri yang tak terbantahkan di antara kami. Dengan setiap momen yang berlalu, kami menyadari bahwa pertemuan pertama ini luar biasa. Itu adalah awal dari hubungan yang mendalam dan bermakna yang dipenuhi dengan cinta, pertumbuhan, dan perjalanan bersama menuju masa depan yang luar biasa.",
     en: "On the bustling streets of Malioboro, Jogja, time flies by as we share stories, laughs and vulnerabilities, feeling the undeniable chemistry between us. With each passing moment, we realized that this first encounter was extraordinary. It was the start of a deep and meaningful relationship filled with love, growth, and a shared journey towards an extraordinary future.",
   },
   'firstdate-desc': {
-    id: "As the sun began to set, illuminating the city of Malang warmly, we started our first date. Nervous joy filled the air as we sat around the same table and got to know each other on a deeper level. With each step, our relationship grew stronger, and the conversation flowed smoothly. It was the perfect first date, full of shared moments, genuine connection, and the promise of a beautiful future together.",
+    id: "Saat matahari mulai terbenam, menyinari kota Malang dengan hangat, kami memulai kencan pertama kami. Kegembiraan yang gugup memenuhi udara saat kami duduk mengelilingi meja yang sama dan mengenal satu sama lain di tingkat yang lebih dalam. Berlalunya setiap langkah, hubungan kami semakin kuat, dan percakapan mengalir lancar. Itu adalah kencan pertama yang sempurna, penuh momen, hubungan yang tulus, dan janji masa depan yang indah bersama.",
     en: "As the sun began to set, illuminating the city of Malang warmly, we started our first date. Nervous joy filled the air as we sat around the same table and got to know each other on a deeper level. With each step, our relationship grew stronger, and the conversation flowed smoothly. It was the perfect first date, full of shared moments, genuine connection, and the promise of a beautiful future together.",
   },
   'firstmeet-desc': {
-    id: "Our paths crossed when we were both in the same class, RPL 4 (Serepet) at SMK Telkom Malang. Little did we know that this chance encounter would mark the beginning of an extraordinary friendship that would weather the highs and lows of high school, creating memories that will last a lifetime.",
+    id: "Jalan kami berpapasan saat kami berdua berada di kelas yang sama, RPL 4 (Serepet) di SMK Telkom Malang. Sedikit yang kami tahu bahwa pertemuan kebetulan ini akan menandai awal dari persahabatan luar biasa yang akan melewati pasang surut sekolah menengah, menciptakan kenangan yang akan bertahan seumur hidup.",
     en: "Our paths crossed when we were both in the same class, RPL 4 (Serepet) at SMK Telkom Malang. Little did we know that this chance encounter would mark the beginning of an extraordinary friendship that would weather the highs and lows of high school, creating memories that will last a lifetime.",
   },
   'ourstory-desc': {
-    id: "a little story of our journey together",
+    id: "cerita singkat perjalanan kami berdua",
     en: "a little story of our journey together",
   },
   'ourstory-title': {
-    id: "Our Story",
+    id: "Cerita Kita",
     en: "Our Story",
   },
   gettingStarted: {
@@ -81,7 +81,7 @@ var dictionary = {
     en: "We Are Getting Married",
   },
   'we-invited': {
-    id: "We invited you to celebrate our wedding",
+    id: "Kami mengundang anda untuk merayakan pernikahan kami",
     en: "We invited you to celebrate our wedding",
   },
   'wedding-date': {
@@ -89,19 +89,19 @@ var dictionary = {
     en: "July 15th, 2023. Kepanjen, Malang",
   },
   'groom-desc': {
-    id: "an ordinary man who with the extraordinary gift of having friends and a future wife who is loyal, kind, patient and loves to joke around. Is the only child of a father and mother with countless struggles and services, you are the best!",
+    id: "seorang pria biasa yang memiliki anugrah luar biasa karena memiliki teman dan calon istri yang setia, baik hati, sabar dan suka bercanda. Merupakan anak tunggal dari ayah dan ibu dengan perjuangan dan jasa yang tak terhitung jumlahnya, kalian yang terbaik!",
     en: "an ordinary man who with the extraordinary gift of having friends and a future wife who is loyal, kind, patient and loves to joke around. Is the only child of a father and mother with countless struggles and services, you are the best!",
   },
   'bride-desc': {
-    id: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove",
-    en: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove",
+    id: "seorang gadis berorientasi keluarga mencari pasangan hidup yang menghargai hubungan dan memiliki rasa tanggung jawab yang kuat terhadap keluarga. Memiliki kepribadian yang fokus pada tujuan untuk memperbaiki taraf hidupnya. Bersemangat untuk mencoba pengalaman baru dan menjalani hidup sepenuhnya.",
+    en: "a family-oriented girl looking for a life partner who values relationships and has a strong sense of responsibility towards his family. Has a personality that revolves around her goals and improving her situation. eager to try new experiences and live life to the fullest!",
   },
   'Our Special Events': {
     id: "Our Special Events",
     en: "Our Special Events",
   },
   'Wedding Events': {
-    id: "Wedding Events",
+    id: "Acara Pernikahan",
     en: "Wedding Events",
   },
   'Akad Nikah': {
@@ -143,8 +143,10 @@ var dictionary = {
 //   en: "Peta",
 // },
 // data-translate="submitAttending" 
+const urlParams = new URLSearchParams(window.location.search);
+const langParam = parseInt(urlParams.get('l'));
 var langs = ["id", "en"];
-var current_lang_index = 0;
+var current_lang_index = langParam;
 var current_lang = langs[current_lang_index];
 
 window.change_lang = function () {
