@@ -97,12 +97,16 @@ var dictionary = {
     en: "July 15th, 2023. Kepanjen, Malang",
   },
   'groom-desc': {
-    id: "seorang pria biasa yang memiliki anugrah luar biasa karena memiliki teman dan calon istri yang setia, baik hati, sabar dan suka bercanda. Merupakan anak tunggal dari ayah dan ibu dengan perjuangan dan jasa yang tak terhitung jumlahnya, kalian yang terbaik!",
-    en: "an ordinary man who with the extraordinary gift of having friends and a future wife who is loyal, kind, patient and loves to joke around. Is the only child of a father and mother with countless struggles and services, you are the best!",
+    id: `seorang pria biasa yang memiliki anugrah luar biasa karena memiliki teman dan calon istri yang setia, baik hati, sabar dan suka bercanda. Merupakan anak tunggal dari ayah dan ibu dengan perjuangan dan jasa yang tak terhitung jumlahnya, kalian yang terbaik! 
+    <br><br><b>Alde</b> adalah anak dari Bapak Yustiyono dan Ibu Dartitik yang lahir dan dibesarkan di Jatirogo, Tuban`,
+    en: `an ordinary man who with the extraordinary gift of having friends and a future wife who is loyal, kind, patient and loves to joke around. Is the only child of a father and mother with countless struggles and services, you are the best!
+    <br><br><b>Alde</b> is the son of Mr. Yustiyono and Mrs. Dartitik who was born and raised from Jatirogo, Tuban`,
   },
   'bride-desc': {
-    id: "seorang gadis berorientasi keluarga mencari pasangan hidup yang menghargai hubungan dan memiliki rasa tanggung jawab yang kuat terhadap keluarga. Memiliki kepribadian yang fokus pada tujuan untuk memperbaiki taraf hidupnya. Bersemangat untuk mencoba pengalaman baru dan menjalani hidup sepenuhnya.",
-    en: "a family-oriented girl looking for a life partner who values relationships and has a strong sense of responsibility towards his family. Has a personality that revolves around her goals and improving her situation. eager to try new experiences and live life to the fullest!",
+    id: `seorang gadis berorientasi keluarga mencari pasangan hidup yang menghargai hubungan dan memiliki rasa tanggung jawab yang kuat terhadap keluarga. Memiliki kepribadian yang fokus pada tujuan untuk memperbaiki taraf hidupnya. Bersemangat untuk mencoba pengalaman baru dan menjalani hidup sepenuhnya. 
+    <br><br><b>Jihan</b> adalah anak dari Bapak Mochamad Zainul Arifin dan Ibu Lilik Zuriah yang lahir dan dibesarkan di Kepanjen, Malang`,
+    en: `a family-oriented girl looking for a life partner who values relationships and has a strong sense of responsibility towards his family. Has a personality that revolves around her goals and improving her situation. eager to try new experiences and live life to the fullest!
+    <br><br><b>Jihan</b> is the son of Mr. Mochamad Zainul Arifin and Mrs. Lilik Zuriah who was born and raised from Kepanjen, Malang`,
   },
   'Our Special Events': {
     id: "Our Special Events",
